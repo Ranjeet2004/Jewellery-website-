@@ -1,0 +1,103 @@
+/* Traditional Jewellery section Start  */
+body {
+        background-color: #fffaf5;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .underline {
+        width: 60px;
+        height: 3px;
+        background-color: #c49b63;
+        margin: 5px auto;
+    }
+
+    .jewelry-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .jewelry-card:hover {
+        transform: scale(1.05);
+    }
+
+    .jewelry-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.jewelry-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+
+/* Traditional Jewellery section End */
+  
+
+   .popular-searches {
+       padding: 40px 20px;
+       max-width: 1200px;
+       margin: auto;
+   }
+
+   .section-title {
+       font-weight: bold;
+       font-size: 18px;
+       color: #6f42c1;
+       /* Purple color */
+       margin-bottom: 8px;
+   }
+
+   .search-links a {
+       color: #6f42c1;
+       text-decoration: none;
+       font-size: 14px;
+       margin-right: 10px;
+   }
+
+   .search-links a:hover {
+       text-decoration: underline;
+   }
+
+   hr {
+       border-top: 1px solid #e0e0e0;
+       margin: 15px 0;
+   }
+
+        .category-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+    
+        .category-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #6f42c1;
+            /* Purple */
+            margin-bottom: 8px;
+        }
+    
+        .subcategories a {
+            color: #6f42c1;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    
+        .subcategories a:hover {
+            text-decoration: underline;
+        }
+    
+        

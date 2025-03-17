@@ -1,0 +1,363 @@
+  /* General Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+:root {
+  --primary-font: "Poppins",sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --primary-color: #fff;
+  --secondary-color: #000;
+   --navbackground-color: rgb(26, 26, 120);
+}
+
+/* navbar start */
+.navbars{
+    background-color: var(--navbackground-color);
+    color: var(--primary-color);
+    padding: 2px;
+    font-size: 15px;
+} 
+/* navbar end  */
+
+.navbar-nav .nav-item{
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+ 
+}
+
+/* .jewellery{
+    text-transform: uppercase;
+    font-family: var(--poppins-fonts);
+    font-size: 18px;
+} */
+
+
+ /* Shop By Categories Start */
+ .dropdown-content {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+
+ body {
+   background-color: var(--primary-color);
+   font-family: var(--primary-font);
+ }
+
+ .category-card {
+   position: relative;
+   text-align: center;
+   background:var(--primary-color);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .category-card img {
+   border-radius: 10px;
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+
+ .category-card p {
+   margin-top: 10px;
+   font-weight: bold;
+ }
+
+ .category-card:hover {
+   transform: translateY(-5px);
+ }
+
+ /* Shop By Categories End */
+
+/* Certficate section start */
+ body {
+   font-family: var(--primary-font)
+ }
+
+ .benefits {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #a9b0b0;
+   /* Dark teal background */
+   padding: 20px;
+   flex-wrap: wrap;
+   /* Ensures responsiveness */
+ }
+
+ .benefit-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: var(--primary-color);
+   text-align: center;
+   width: 120px;
+   margin: 0 15px;
+ }
+
+ .benefit-item img {
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10px;
+ }
+
+ .divider {
+   height: 50px;
+   width: 1px;
+   background-color:var(--primary-color);
+   margin: 0 10px;
+ }
+
+ /* Responsive design */
+ @media (max-width: 900px) {
+   .benefits {
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+
+   .divider {
+     display: none;
+     /* Hide dividers on small screens */
+   }
+ }
+/* Certficate section start */
+
+
+/* video start Studio */
+body {
+  font-family: var(--primary-font);
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.carousel-title {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.carousel-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  height: 400px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background: var(--primary-color);
+  opacity: 0.5;
+}
+
+.card video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+.card.active {
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card:nth-child(1) {
+  transform: translateX(-220px) scale(0.9);
+  z-index: 1;
+}
+
+.card:nth-child(2) {
+  transform: translateX(-110px) scale(1);
+  z-index: 2;
+}
+
+.card:nth-child(3) {
+  transform: translateX(0px) scale(1.2);
+  z-index: 3;
+}
+
+.card:nth-child(4) {
+  transform: translateX(110px) scale(1);
+  z-index: 2;
+}
+
+.card:nth-child(5) {
+  transform: translateX(220px) scale(0.9);
+  z-index: 1;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00aaff;
+  color:var(--primary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.active .view-btn {
+  opacity: 1;
+}
+
+.nav-btn {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color:var(--primary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 300px;
+  }
+
+  .card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .card:nth-child(1) {
+    transform: translateX(-180px) scale(0.8);
+  }
+
+  .card:nth-child(2) {
+    transform: translateX(-90px) scale(1);
+  }
+
+  .card:nth-child(3) {
+    transform: translateX(0px) scale(1.2);
+  }
+
+  .card:nth-child(4) {
+    transform: translateX(90px) scale(1);
+  }
+
+  .card:nth-child(5) {
+    transform: translateX(180px) scale(0.8);
+  }
+}
+/* video end */
+
+/* New Arrial Section Start */
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+  
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .product-image img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .product-info {
+      padding: 15px;
+    }
+  
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .product-price {
+      color: #d9534f;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+    }
+  
+    .discount {
+      color: green;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .star-rating {
+      color: gold;
+    }
+
+        .view-all {
+          float: right;
+          color: #b6895b;
+          font-weight: bold;
+          text-decoration: none;
+        }
+    
+        .view-all:hover {
+          text-decoration: underline;
+        }
+        /* New Arrial Section End */
+
+
